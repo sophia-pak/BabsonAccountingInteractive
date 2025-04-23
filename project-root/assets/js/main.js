@@ -1,4 +1,4 @@
-// main.js
+// Form messaging
 const messageForm = document.getElementById('messageForm');
 if (messageForm) {
   messageForm.addEventListener('submit', function (e) {
