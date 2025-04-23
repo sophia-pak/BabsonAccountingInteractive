@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Babson Accounting Faculty Directory" />
+    <title>Faculty | Accounting @ Babson</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cpa.html">CPA</a>
+        <a href="concentration.html">Concentration</a>
+        <a href="careers.html">Careers</a>
+        <a href="faculty.html" class="active">Faculty</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="faculty-directory">
+        <h1>Faculty Directory</h1>
+        <p>
+          Meet the professors guiding your journey through accounting at Babson.
+        </p>
+
+        <div class="faculty-container">
+          <div class="faculty-card" onclick="flipCard(this)">
+            <div class="card-front">
+              <img
+                src="assets/images/blanchette.png"
+                alt="Shay Blachette Proulx"
+              />
+              <p>Shay Blachette Proulx</p>
+            </div>
+            <div class="card-back">
+              <p>
+                Professor Blanchette Proulx is a former PwC Assurance Partner,
+                and she brings 20+ years of experience in public accounting. Her
+                expertise includes auditing, financial reporting, and advising
+                private companies through IPOs and strategic growth.
+              </p>
+              <a href="mailto:sblanchetteproulx@babson.edu"
+                >Email Professor Blanchette Proulx</a
+              >
+            </div>
+          </div>
+
+          <div class="faculty-card" onclick="flipCard(this)">
+            <div class="card-front">
+              <img src="assets/images/attachot.png" alt="Go Attachot" />
+              <p>Go Attachot</p>
+            </div>
+            <div class="card-back">
+              <p>
+                Professor Attachot is an Assistant Professor of Practice in
+                Accounting. Originally from Thailand, he brings global
+                experience from ExxonMobil and holds a Ph.D. in Accounting. His
+                research focuses on international financial reporting, and he
+                teaches financial and managerial accounting at Babson.
+              </p>
+              <a href="mailto:wattachot@babson.edu">Email Professor Attachot</a>
+            </div>
+          </div>
+
+          <div class="faculty-card" onclick="flipCard(this)">
+            <div class="card-front">
+              <img src="assets/images/alberti.png" alt="Cristina Alberti" />
+              <p>Cristina Alberti</p>
+            </div>
+            <div class="card-back">
+              <p>
+                Professor Alberti is an Assistant Professor of Accounting at Babson and a
+                former PwC Assurance Manager. Her research explores how audit
+                firm and academic cultures impact decision-making and diversity.
+                She teaches auditing and financial accounting.
+              </p>
+              <a href="mailto:calberti@babson.edu">Email Professor Alberti</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Babson Accounting Guide</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

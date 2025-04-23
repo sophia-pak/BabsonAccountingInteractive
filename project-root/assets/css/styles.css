@@ -1,0 +1,150 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  header, footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    background-color: #004080;
+    padding: 0.75em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover,
+  .navbar a.active {
+    color: #ffc107;
+  }
+  
+  main {
+    padding: 2em;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1, h2 {
+    color: #004080;
+  }
+  
+  .babson-stats img {
+    width: 200px;
+    display: block;
+    margin: 1em auto;
+  }
+  
+  .contact-form {
+    background-color: #e0e0e0;
+    padding: 1em;
+    margin-top: 2em;
+    border-radius: 5px;
+  }
+  
+  .contact-form textarea {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 0.5em;
+  }
+  
+  button {
+    padding: 0.5em 1em;
+    background-color: #004080;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #002f5f;
+  }
+  
+  .feedback {
+    margin-top: 0.5em;
+    font-weight: bold;
+  }
+  
+  .timeline .year {
+    background-color: #dce6f1;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-left: 5px solid #004080;
+  }
+  
+  .career-paths li {
+    margin: 0.5em 0;
+  }
+  
+  .faculty-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    margin-top: 2em;
+  }
+  
+  .faculty-card {
+    width: 200px;
+    height: 260px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+  .faculty-card img {
+    width: 120px;    
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  
+  .faculty-card .card-front, 
+  .faculty-card .card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 1em;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .faculty-card .card-back {
+    transform: rotateY(180deg);
+  }
+  
+  .faculty-card.flipped .card-front {
+    transform: rotateY(180deg);
+  }
+  
+  .faculty-card.flipped .card-back {
+    transform: rotateY(360deg);
+  }
