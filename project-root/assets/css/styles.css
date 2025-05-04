@@ -148,3 +148,16 @@ body {
   .faculty-card.flipped .card-back {
     transform: rotateY(360deg);
   }
+
+  .babson-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin: 2em 0;
+  }
+  
+  .babson-stats img {
+    width: 200px;
+    height: auto;
+  }
+  
