@@ -160,4 +160,14 @@ body {
     width: 200px;
     height: auto;
   }
+
+  .hidden {
+    display: none;
+  }
   
+  #formStatus {
+    margin-top: 0.5em;
+    font-weight: bold;
+  }
+ 
+    

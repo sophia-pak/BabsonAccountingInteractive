@@ -1,20 +1,29 @@
-// Form messaging
-const messageForm = document.getElementById('messageForm');
-if (messageForm) {
-  messageForm.addEventListener('submit', function (e) {
+// Handle "Ask a Question" form
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("messageForm");
+  const messageBox = document.getElementById("message");
+  const status = document.getElementById("formStatus");
+
+  if (!form || !messageBox || !status) return;
+
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
-    const message = messageForm.querySelector('textarea').value.trim();
-    const status = document.getElementById('formStatus');
-    if (message.length > 0) {
-      status.textContent = "Message sent! We'll get back to you soon.";
-      status.style.color = "green";
-      messageForm.reset();
-    } else {
-      status.textContent = "Please enter a message.";
+    const message = messageBox.value.trim();
+
+    if (!message) {
+      status.textContent = "Please enter a message before submitting.";
       status.style.color = "red";
+      status.classList.remove("hidden");
+      return;
     }
+
+    // Fake "send" success
+    form.reset();
+    status.textContent = "Thanks! Your message has been sent to Sophia Pak.";
+    status.style.color = "green";
+    status.classList.remove("hidden");
   });
-}
+});
 
 // Quiz answer checker
 function checkAnswer(inputId, correctAnswer) {
